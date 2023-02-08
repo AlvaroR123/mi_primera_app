@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+st.image("p.png")
 ##Al momento que salgan las nuevas bases oficom se deben actualizar las fechas, el AÑO debe ir en formato año_anterior - año_actual, 
 # y MES enero-mes_actual
 MES = "Enero-Diciembre"
