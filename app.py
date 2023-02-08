@@ -4,20 +4,6 @@ import matplotlib.pyplot as plt
 st.image("Procolombia.png")
 
 st.title("Visualización de la base de datos Dane_Oficom.csv")
-st.session_state['answer'] = ''!
-
-st.write(st.session_state)
-
-realans = ['', 'abc', 'edf']
-
-if  st.session_state['answer'] in realans:
-    answerStat = "correct"
-elif st.session_state['answer'] not in realans:
-    answerStat = "incorrect"
-
-st.write(st.session_state)
-st.write(answerStat)
-
 @st.cache
 def load_data():
     data = pd.read_excel("OFICOM2022.xlsx")
